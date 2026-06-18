@@ -1,4 +1,6 @@
 <?php
+
+use Pendaftaran;
 // Memanggil class induk
 require_once "Pendaftaran.php";
 
