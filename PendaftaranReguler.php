@@ -20,11 +20,11 @@ class PendaftaranReguler extends Pendaftaran {
     }
 
     public function hitungTotalBiaya() {
-        return 0; 
+        return $this->biaya_pendaftaran_dasar; 
     }
 
     public function tampilkanInfoJalur() {
-        return ""; 
+        return "Pilihan Prodi: " . $this->pilihan_prodi . " (Lokasi: " . $this->lokasi_kampus . ")"; 
     }
 }
 ?>

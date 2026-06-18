@@ -18,11 +18,11 @@ class PendaftaranKedinasan extends Pendaftaran {
     }
 
     public function hitungTotalBiaya() {
-        return 0; 
+        return $this->biaya_pendaftaran_dasar * 1.25; 
     }
 
     public function tampilkanInfoJalur() {
-        return ""; 
+        return "Instansi: " . $this->instansi_sponsor . " (No. SK: " . $this->sk_ikatan_dinas . ")"; 
     }
 }
 ?>

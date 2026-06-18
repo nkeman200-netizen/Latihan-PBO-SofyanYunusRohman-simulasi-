@@ -18,11 +18,11 @@ class PendaftaranPrestasi extends Pendaftaran {
     }
 
     public function hitungTotalBiaya() {
-        return 0; 
+        return $this->biaya_pendaftaran_dasar - 50000; 
     }
 
     public function tampilkanInfoJalur() {
-        return ""; 
+        return "Prestasi: " . $this->jenis_prestasi . " (Tingkat " . $this->tingkat_prestasi . ")"; 
     }
 }
 ?>
